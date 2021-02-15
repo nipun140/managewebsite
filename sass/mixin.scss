@@ -1,0 +1,43 @@
+@import "./var.scss";
+
+@mixin getStartedBtn {
+  text-decoration: none !important;
+  background-color: hsl(12, 88%, 59%);
+  color: white !important;
+  padding: 8px 10px;
+  align-self: center;
+  border-radius: 20px;
+  transition: all 0.2s;
+  &:hover {
+    background-color: hsl(0, 85%, 79%);
+  }
+}
+
+@mixin myCont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@mixin myCol {
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+}
+
+@mixin myHeading {
+  color: $DarkBlue;
+  font-weight: 600;
+}
+
+@mixin myText {
+  color: $DarkGrayishBlue;
+}
+
+@mixin rod {
+  background-color: $VeryPaleRed;
+  position: absolute;
+  width: 150vw;
+  height: 100%;
+  z-index: -1;
+}
